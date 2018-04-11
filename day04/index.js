@@ -1,0 +1,2 @@
+//lexical scope
+// "use strict"
