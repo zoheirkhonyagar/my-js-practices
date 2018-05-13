@@ -114,6 +114,30 @@ zoheir.login("zoheir" , "123456");
 zoheir.print();
 
 
+function UserModel() {
+    var username , password;
+    
+    function doLogin(user , pass) {
+        username = user;
+        password = pass;
+        return "You Are Login now !";
+    }
+
+    function doPrint() {
+        return "username : " + username + " password : " + password;
+    }
+
+    var publicApi = {
+        login: doLogin ,
+        print: doPrint
+    };
+
+    return publicApi;
+};
+
+
+
+
 
 /* this keyword */
 
